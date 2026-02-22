@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', (listo)=> {console.log(listo.type);
 let festivosX = {
     1: {
 		1: ['Año Nuevo','festivo-1'],
@@ -198,3 +199,4 @@ function reiniciarSeleccion() {
 
 // Inicializar el calendario al cargar
 renderizarCalendario();
+}, false);
