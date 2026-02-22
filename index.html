@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Calendario de Vacaciones Interactivo</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMi41IDEyLjUiIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICNkZWY7Ij4NCgkJCQkJCTxzdHlsZT50ZXh0e2ZvbnQ6IDEwcHggYXJpYWwsIHNhbnMtc2VyaWY7c3Ryb2tlOiBjdXJyZW50Q29sb3I7c3Ryb2tlLXdpZHRoOiAuNTt9PC9zdHlsZT4NCgkJCQkJCTx0ZXh0IHg9IjEuMjUiIHk9IjEwIiAgZmlsbD0iIzZhZiI+SjwvdGV4dD4NCgkJCQkJCTx0ZXh0IHg9IjUiIHk9IjEwIiBmaWxsPSIjNmFmIj5CPC90ZXh0Pg0KCQkJCQk8L3N2Zz4=" sizes="any" type="image/svg+xml" />
+    
+</head>
+<body>
+     <div class="container">
+        <h1>Selecciona tus Días de Vacaciones</h1>
+        <div class="calendar-header">
+			<h2 id="anno-actual"></h2>
+            <button onclick="cambiarMes(-1)">Anterior</button>
+            <h2 id="mes-actual"></h2>
+            <button onclick="cambiarMes(1)">Siguiente</button>
+        </div>
+        <div class="calendar-grid" id="calendar-grid">
+            <!-- Los días de la semana y las fechas se generarán aquí con JavaScript -->
+        </div>
+        <p>Días seleccionados: <span id="dias-seleccionados">0</span></p>
+        <button onclick="reiniciarSeleccion()">Reiniciar</button>
+    </div>
+</body>
+</html>
