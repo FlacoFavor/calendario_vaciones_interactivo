@@ -197,6 +197,16 @@ function reiniciarSeleccion() {
     renderizarCalendario();
 };
 
+document.querySelector('.container button:nth-of-type(1)').addEventListener('click', function() {
+	cambiarMes(-1);
+}, false);
+
+document.querySelector('.container button:nth-of-type(2)').addEventListener('click', function() {
+	cambiarMes(1);
+}, false);
+
+document.querySelector('.container > button:last-child').addEventListener('click', reiniciarSeleccion, false);
+
 // Inicializar el calendario al cargar
 renderizarCalendario();
 }, false);
