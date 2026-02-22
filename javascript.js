@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (listo)=> {console.log(listo.type);
-let festivosX = {
+	let festivosX = {
     1: {
 		1: ['Año Nuevo','festivo-1'],
 		6: ['Día de Reyes','festivo-1'],
